@@ -3,8 +3,8 @@ const express = require('express');
 const tourcontroller = require('./../controlers/tourcontrollers');
 const router=express.Router();
 
-router.param( 'id', tourcontroller.param
-);
+// router.param( 'id', tourcontroller.param
+// );
 
 //  a middle ware that checKTour 
 // for name and price property
@@ -13,7 +13,7 @@ router.param( 'id', tourcontroller.param
 router
 .route('/')
 .get(tourcontroller.getAllTours)
-.post(tourcontroller.checkTour, tourcontroller.addTour);
+.post(tourcontroller.addTour);
 router
 .route('/:id')
 .delete(tourcontroller.deleteTourById)

@@ -1,0 +1,29 @@
+GET http://localhost:3000/overview.html
+
+###
+GET http://localhost:3000/api/v1/tours
+###
+POST http://localhost:3000/api/v1/tours 
+   Content-Type:  application/json
+
+{
+
+    "name":"H. Simpson"
+
+}
+###
+POST http://localhost:3000/api/v1/tours 
+   Content-Type:  application/json
+
+{
+
+   "price": 623,
+   "rating": 4.7
+
+}
+
+###
+GET http://localhost:3000/api/v1/tours 
+###
+
+GET http://localhost:3000/api/v1/tours/6424443060b9e527b0822dd6
