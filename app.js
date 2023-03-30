@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-const axios = require('axios');
+//routes
 const usersRouter = require('./routes/userRoutes');
 const toursRouter = require('./routes/tourRoutes');
+
 const morgan = require('morgan');
 app.use(express.json()); //known as body parser of the request, a middleware
 
