@@ -1,7 +1,6 @@
 const fs = require('fs');
 const express = require('express');
 const Tour = require('../models/tourModel');
-const { Query } = require('mongoose');
 const APIFeatures=require('../utils/apiFeatures')
 //NOTE - middleware controller  This is called Aliasing
 exports.getTopCheapTours = (req, res, next) => {
