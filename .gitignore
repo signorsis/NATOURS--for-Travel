@@ -3,3 +3,4 @@ config.env
 package-lock.json
 .prettierrc
 
+JWT.gpt.js

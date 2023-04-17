@@ -10,6 +10,8 @@ const router = express.Router();
 // send 404 if doesnt gets both
 // this middle ware is added to post method of
 //NOTE - middle ware to create an alias for top 5 cheap tours
+router.route('/tours-stats').get(tourcontroller.getTourStats);
+router.route('/monthly-plan/:year').get(tourcontroller.getMonthlyPlan);
 
 router
   .route('/top-5-cheap')
